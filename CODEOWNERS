@@ -1,0 +1,28 @@
+# Code owners
+
+# Global owners
+
+* @AnLoMinus
+
+# Documentation
+
+docs/ @AnLoMinus
+*.md @AnLoMinus
+
+# Source code
+
+src/ @AnLoMinus
+
+# GitHub workflows
+
+.github/ @AnLoMinus
+
+# Security files
+
+SECURITY.md @AnLoMinus
+.github/workflows/security-scan.yml @AnLoMinus
+
+# Release files
+
+CHANGELOG.md @AnLoMinus
+VERSION @AnLoMinus
