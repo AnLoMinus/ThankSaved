@@ -3,8 +3,10 @@
 **ספרון תודה דיגיטלי לשביל של אור וישועה** 🕊️
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](VERSION)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+> **גירסה נוכחית:** 1.1.0 — מופיעה גם בתגית הגירסה בעמוד הראשי ובסרגל הניווט החדש.
 
 ---
 
@@ -29,6 +31,15 @@ open assets/📔 ספרון להדפסה — כל 40 העמודים.html
 - **[📖 תיעוד](#-תיעוד)** - מדריכים והסברים
 - **[🤝 תרומה](#-איך-לתרום)** - איך להצטרף לפרויקט
 - **[💝 תמיכה](#-תמיכה)** - איך לתמוך בפרויקט
+
+---
+
+### 🌐 קישורי גרסאות דיגיטליות
+
+- **[העמוד הראשי עם תגית גירסה](index.html)** — כולל סרגל מעבר מהיר ל-4 הגרסאות וקרדיטים מעודכנים.
+- **[דף ריכוז הגרסאות](www/index.html)** — בחירה מהירה בין כל הגרסאות הדיגיטליות.
+- **[גירסה 1 — המקור](www/v1/index.html)** | **[גירסה 2 — מנוקדת](www/v2/index-nikud.html)** | **[גירסה 3 — המשך](www/v3/index-nikud.html)** | **[גירסה 4 — עדכנית](www/v4/index-nikud.html)**.
+- **קבצי הדפסה:** [40 עמודים](assets/%F0%9F%93%94%20ספרון%20להדפסה%20%E2%80%94%20כל%2040%20העמודים.html) | [10 עמודים ראשונים](assets/%F0%9F%93%94%20ספרון%20להדפסה%20%E2%80%94%2010%20עמודים%20ראשונים.html).
 
 ---
 
