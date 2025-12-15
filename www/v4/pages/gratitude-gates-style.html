@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>איפיון סגנון לשערי תודה</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Assistant', 'Heebo', sans-serif;
+            background: radial-gradient(circle at 20% 20%, #fdf2f8, #eef2ff 40%, #e0f2fe 80%);
+            color: #0f172a;
+            padding: 28px;
+            line-height: 1.7;
+        }
+
+        .shell {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #f472b6, #a855f7, #22d3ee);
+            color: #0b0b0b;
+            padding: 28px;
+            border-radius: 26px;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
+        }
+
+        h1 {
+            margin: 0 0 6px;
+        }
+
+        p.lead {
+            margin: 0;
+            color: #0b0b0b;
+            font-weight: 600;
+        }
+
+        .panel {
+            margin-top: 22px;
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 22px;
+            padding: 18px 20px;
+            box-shadow: 0 14px 42px rgba(15, 23, 42, 0.16);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 12px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 14px;
+            box-shadow: 0 12px 36px rgba(15, 23, 42, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+        }
+
+        .swatch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+            margin: 10px 0;
+        }
+
+        .tone {
+            height: 18px;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 6px 18px rgba(15, 23, 42, 0.18);
+        }
+
+        ul {
+            padding-right: 16px;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        .note {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <header class="hero">
+            <h1>איפיון סגנון לשערי תודה</h1>
+            <p class="lead">התאמות צבע, גרדיאנטים וצללים לכל קבוצה של שערי הודיה — מנגינת עיצוב אחידה.</p>
+        </header>
+
+        <section class="panel">
+            <h2>חטיבת הטבע והיסודות</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>שמיים • רוח • אור • דרך</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#22d3ee,#a5f3fc);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#4f46e5,#a855f7);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#0ea5e9,#38bdf8);"></div>
+                    </div>
+                    <ul>
+                        <li>צללים חיצוניים רכים: 0 14px 36px rgba(14,165,233,0.32).</li>
+                        <li>פנים מואר: הוספת שכבת inner-shadow דקה לגבולות הכרטיס.</li>
+                        <li>דימוי תנועת רוח עם gradient זוויתי ופסים דקים.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>מים • אדמה • אש</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#22c55e,#a3e635);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#f97316,#fb923c);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#0ea5e9,#14b8a6);"></div>
+                    </div>
+                    <ul>
+                        <li>מרקם גרגרי עדין עם overlay של rgba(0,0,0,0.04).</li>
+                        <li>מעברי צבע מעוגלים ליצירת תחושת זרימה.</li>
+                        <li>צל פנימי רך: inset 0 0 12px rgba(0,0,0,0.08).</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>חטיבת הלב והקשרים</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>אהבה • משפחה • חברים • שקט</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#ec4899,#f9a8d4);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#f97316,#fbbf24);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#f59e0b,#fef08a);"></div>
+                    </div>
+                    <ul>
+                        <li>טון עץ בהיר לכותרות, לחיבור חמים.</li>
+                        <li>פינות מעוגלות במיוחד (20px) למגע רך.</li>
+                        <li>שכבת אור פנימית: inset 0 1px 8px rgba(255,255,255,0.6).</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>חסד • סליחה • שמחה</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#a855f7,#c084fc);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#22d3ee,#67e8f9);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#bef264,#4ade80);"></div>
+                    </div>
+                    <ul>
+                        <li>אנימציית ריחוף עדינה בכפתורים (translateY(-2px)).</li>
+                        <li>שקיפות קלה לקרוסלות טקסט: rgba(255,255,255,0.86).</li>
+                        <li>הצללה כפולה: חיצונית עבה + פנימית רכה.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>חטיבת השראה ושפע</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>ידע • השראה • חלומות • דמיון</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#06b6d4,#67e8f9);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#7c3aed,#a855f7);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#0ea5e9,#38bdf8);"></div>
+                    </div>
+                    <ul>
+                        <li>טקסט כותרות בקאפס קטנות לדיוק אקדמי.</li>
+                        <li>תלת־ממד קל בכרטיסים עם perspective של 600px.</li>
+                        <li>קו תחתון זוהר לרשימות: linear-gradient(90deg,#7c3aed,#22d3ee).</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>שפע • שירה • ניצוצות</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#f59e0b,#fcd34d);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#22c55e,#a7f3d0);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#fde047,#f472b6);"></div>
+                    </div>
+                    <ul>
+                        <li>שימוש בסרגלי התקדמות נוצצים לספר את מסע השפע.</li>
+                        <li>דפוסי dotted עדינים להזכיר ניצוצות אור.</li>
+                        <li>הדגשה עם filter: drop-shadow(0 8px 20px rgba(244,114,182,0.35)).</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>חטיבת רוח ואמונה</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>אמונה • תפילה • אור אלוקי</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#0ea5e9,#6366f1);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#1d4ed8,#a5b4fc);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#c084fc,#f5d0fe);"></div>
+                    </div>
+                    <ul>
+                        <li>טקסטים עם אות פתיחה מוגדלת (drop-cap) לכל פסקה מרכזית.</li>
+                        <li>אייקון כוכב עדין לצד כותרת משנה.</li>
+                        <li>גבולות שקופים: 1px solid rgba(255,255,255,0.4).</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>העם שלי • הבורא יתברך</h3>
+                    <div class="swatch">
+                        <div class="tone" style="background: linear-gradient(135deg,#111827,#0ea5e9);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#78350f,#f59e0b);"></div>
+                        <div class="tone" style="background: linear-gradient(135deg,#1e293b,#64748b);"></div>
+                    </div>
+                    <ul>
+                        <li>קומפוזיציה סימטרית המדגישה טקסיות.</li>
+                        <li>הדפסה על רקע כהה עם טקסט זהב (#fbbf24).</li>
+                        <li>מסגרות פנימיות כפולות בעובי 1px, 3px.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <p class="note">רשימת השערים מבוססת על עמודי המקור (1–40) שבמאגר. כל חטיבה יכולה לשמש כתבנית רקע, כפתורים
+            וכותרות משנה בהתאם לצבעי הסוואצ׳.</p>
+    </div>
+</body>
+
+</html>

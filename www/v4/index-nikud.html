@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אָמַרְתִּי תּוֹדָה וְנוֹשַׁעְתִּי — גִּרְסָה מְנוּקֶּדֶת</title>
+    <style>
+        :root {
+            --ink: #0f172a;
+            --gold: #f59e0b;
+            --soft: #f8fafc;
+            --card: rgba(255, 255, 255, 0.85);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Assistant', 'Heebo', 'Alef', sans-serif;
+            background: radial-gradient(circle at 20% 20%, #fef3c7 0%, #faf5ff 25%, #ecfeff 50%, #f8fafc 100%);
+            color: var(--ink);
+            line-height: 1.7;
+            padding: 24px;
+        }
+
+        .shell {
+            max-width: 1080px;
+            margin: 0 auto 80px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #c084fc, #f472b6 35%, #fde047 90%);
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: var(--shadow);
+            color: #0b0b0b;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.45), transparent 45%),
+                radial-gradient(circle at 10% 80%, rgba(255, 255, 255, 0.35), transparent 40%);
+            mix-blend-mode: screen;
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 2.4rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.18);
+            color: #0f172a;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-weight: 700;
+            backdrop-filter: blur(6px);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .panel {
+            margin-top: 28px;
+            background: var(--card);
+            border-radius: 20px;
+            padding: 22px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(6px);
+        }
+
+        .panel h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.86));
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .link-pill {
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 10px 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+
+        .link-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.3);
+        }
+
+        .link-pill.alt {
+            background: linear-gradient(120deg, #22d3ee, #a855f7);
+            color: #0f172a;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            margin: 18px 0 10px;
+            color: #0f172a;
+        }
+
+        ul.nikud {
+            padding-right: 18px;
+            margin: 0;
+            list-style: '✶  ';
+        }
+
+        ul.nikud li {
+            margin-bottom: 10px;
+        }
+
+        .footnote {
+            text-align: center;
+            margin-top: 32px;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 16px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="shell">
+        <section class="hero">
+            <h1>אָמַרְתִּי תּוֹדָה וְנוֹשַׁעְתִּי — הַסֵּפֶר הָרָאשִׁי בְּנִקּוּד מָלֵא</h1>
+            <p>גִּרְסָה מְנוּקֶּדֶת לְדַפְדּוּף וְהַדְפָּסָה, עִם עֲרִיכָה מוּסִיקָלִית וְגוּוָנֵי אוֹר עֲדִינִים.</p>
+            <div class="badges">
+                <span class="badge">בְּסֵדֶר הַכֹּל כַּתִּזְמוֹרֶת</span>
+                <span class="badge">גְּרָאדִיֶּנְטִים וּצְלָלִים מְאוּזָּנִים</span>
+                <span class="badge">נִקּוּד חַם וּבָהִיר</span>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>נְתִיבֵי גִּישָׁה מָהִירִים</h2>
+            <div class="links">
+                <a class="link-pill" href="index.html">הַגִּרְסָה הָרְגִילָה</a>
+                <a class="link-pill alt" href="pages/links.html">לִינְקִיָּה — כָּל הָעֲמוּדִים</a>
+                <a class="link-pill" href="pages/gratitude-gates-style.html">אִיפְיוּן סְטַיְיל וּפַאלֶטוֹת</a>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>פְּתִיחָה מְנוּקֶּדֶת</h2>
+            <p class="section-title">הַרְמוֹנְיָה רִאשׁוֹנָה — דַּפִּים 1–3</p>
+            <div class="grid">
+                <article class="card">
+                    <h3>בְּרוּכִים הַבָּאִים לָאוֹר</h3>
+                    <ul class="nikud">
+                        <li>🌅 בָּרוּךְ הַבָּא לְמַסָּע שֶׁל תּוֹדָה וִישׁוּעָה</li>
+                        <li>✨ כָּל מִלָּה כָּאן הִיא נִצּוֹץ אוֹר חַי</li>
+                        <li>🙏 כָּל שׁוּרָה פּוֹתַחַת אֶת הַלֵּב לָעוֹלָם</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>תּוֹדָה עַל עֶצֶם הַקִּיּוּם</h3>
+                    <ul class="nikud">
+                        <li>🫧 תּוֹדָה עַל הַנְשִׁימָה הָרִאשׁוֹנָה שֶׁל הַיּוֹם</li>
+                        <li>🌅 תּוֹדָה עַל כָּךְ שֶׁאֲנִי קַיָּם — זֶה אֵינוֹ מוּבָן מֵאֵלָיו</li>
+                        <li>🕯️ תּוֹדָה עַל הַמּוּדָעוּת שֶׁאֵינֶנִּי נִרְדָּם בִּתְהוֹם</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>תּוֹדָה עַל הַנְּשָׁמָה</h3>
+                    <ul class="nikud">
+                        <li>🕊️ תּוֹדָה עַל הַנְּשָׁמָה הַטְּהוֹרָה שֶׁנּוֹחָה בְּתוֹכִי</li>
+                        <li>✨ הַנְּשָׁמָה הִיא נִצּוֹץ מֵאוֹר הָאֵין־סוֹף</li>
+                        <li>🫶 הַחֲזָרָה אֶל הַנֶּפֶשׁ הִיא הַבַּיִת הָאֲמִתִּי שֶׁלִּי</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>שַׁעֲרֵי תּוֹדָה כְּתוֹזֶמֶרֶת</h2>
+            <p class="section-title">חֲטִיבָה תֵּמָתִית לְכָל קְבוּצַת פְּרָקִים</p>
+            <div class="grid">
+                <article class="card">
+                    <h3>גַּלֵּי הַטֶּבַע</h3>
+                    <p>אֲוִיר, מַיִם, אֵשׁ וַאֲדָמָה בְּגוֹנֵי כָּחֹל־טֳרְקוֹאִיז וַאֲבַנְטוּרִין חַמִּים.</p>
+                </article>
+                <article class="card">
+                    <h3>קֶשֶׁרֵי הַלֵּב</h3>
+                    <p>אַהֲבָה, מִשְׁפָּחָה וְחֲבֵרִים בְּגְרָאדִיֶּנְט סָמֹק וְזָהָב, כְּמִיתְרֵי כִּינוֹר רַכִּים.</p>
+                </article>
+                <article class="card">
+                    <h3>נִסִּים וַאֲתַגְּרִים</h3>
+                    <p>סְלִיחָה, שִׂמְחָה וְדִמְיוֹן בְּעוֹרֵק בָּזֶק בֵּין סַפִּיר כֵּהֶה וְגַנְדָּלְף קַשְׁמִירִי.</p>
+                </article>
+                <article class="card">
+                    <h3>שִׁירַת הַנִּשְׁמָה</h3>
+                    <p>תְּפִלָּה, שִׁירָה וְאוֹר אֱלוֹקִי בְּמִקְצַב אָזְ'וּר־לִילְי וְלָאוֶונְדַּה זֹרַחַת.</p>
+                </article>
+            </div>
+        </section>
+
+        <p class="footnote">"זֶבַח תּוֹדָה יְכַבְּדָנְנִי" — נְטִילַת הַפְּסַק הַמְּנוּקָּדָה מְלַמֶּדֶת שֶׁכָּל תּוֹדָה
+            הִיא תֶּבֶל מֻזָּק וּמְנוּצֶנֶת.</p>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אָמַרְתִּי תּוֹדָה — גירסה מְנֻקֶּדֶת</title>
+    <style>
+        :root {
+            --bg: radial-gradient(circle at 20% 20%, #ffe2f1 0%, #f5f7ff 45%, #e4f6ff 100%);
+            --card-bg: linear-gradient(135deg, #ffffff 0%, #f7f9ff 100%);
+            --accent: #9b59b6;
+            --accent-2: #2c98f0;
+            --shadow-soft: 0 20px 40px rgba(41, 52, 98, 0.15);
+            --shadow-inner: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            --radius: 18px;
+            --text: #1c1c1c;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', 'Assistant', 'David', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 24px 16px 56px;
+            line-height: 1.8;
+        }
+
+        header {
+            max-width: 1100px;
+            margin: 0 auto 32px;
+            padding: 28px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(247, 249, 255, 0.9));
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft), var(--shadow-inner);
+            border: 1px solid rgba(156, 165, 193, 0.18);
+        }
+
+        .tagline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(90deg, rgba(155, 89, 182, 0.1), rgba(44, 152, 240, 0.1));
+            color: #4e5a78;
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            box-shadow: inset 0 0 0 1px rgba(155, 89, 182, 0.2);
+        }
+
+        h1 {
+            margin: 14px 0 6px;
+            font-size: clamp(28px, 3vw, 40px);
+            color: #2c2c34;
+            text-shadow: 0 2px 12px rgba(155, 89, 182, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #444a61;
+            max-width: 760px;
+        }
+
+        .cta-bar {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .cta-bar a {
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            box-shadow: 0 10px 24px rgba(44, 152, 240, 0.22);
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+
+        .cta-primary {
+            background: linear-gradient(135deg, #2c98f0, #9b59b6);
+            color: white;
+        }
+
+        .cta-secondary {
+            background: white;
+            color: #2c98f0;
+            border: 1px solid rgba(44, 152, 240, 0.2);
+            box-shadow: 0 10px 24px rgba(22, 30, 62, 0.12);
+        }
+
+        .cta-bar a:hover {
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 22px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(142, 154, 183, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 85% 20%, rgba(155, 89, 182, 0.18), transparent 45%),
+                radial-gradient(circle at 20% 80%, rgba(44, 152, 240, 0.14), transparent 35%);
+            z-index: 0;
+        }
+
+        .card h2 {
+            margin: 0 0 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card p,
+        .card ul {
+            position: relative;
+            z-index: 1;
+            color: #353b52;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 10px;
+            background: rgba(44, 152, 240, 0.12);
+            color: #2c98f0;
+            font-weight: 700;
+            margin-bottom: 8px;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        }
+
+        footer {
+            max-width: 1100px;
+            margin: 28px auto 0;
+            padding: 18px;
+            text-align: center;
+            color: #4a4a5a;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 14px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(156, 165, 193, 0.18);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="tagline">✨ מַהֲדוּרָה מְנֻקֶּדֶת • תּוֹדָה כְּתוֹר תִּזְמוֹרֶת</div>
+        <h1>אָמַרְתִּי תּוֹדָה — וְנוֹשַׁעְתִּי</h1>
+        <p class="subtitle">גִּרְסָה מְרֻכֶּזֶת וּמְנֻקֶּדֶת שֶׁל הָעַמּוּד הָרָאשִׁי, מְעֻצֶּבֶת כְּתִזְמוֹרֶת שֶׁכָּל
+            כְּלִי מְחַזֵּק אֶת הַמַּשְׁמָעוּת בְּשׁוּרָה. מִכָּאן תִּמְצְאוּ גַּם לִינְקִיָּה לְכָל הָעֲמוּדִים
+            וּמִפְרָטֵי עִצּוּב לְכָל "שַׁעַר" שֶׁל הוֹדָיָה.</p>
+        <div class="cta-bar">
+            <a class="cta-primary" href="links.html">לִינְקִיַּת הַתְּכוּנָה הַמְּלֵאָה</a>
+            <a class="cta-secondary" href="pages/gate-styles.html">מִפְרָט עִצּוּבִי לַשְּׁעָרִים</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="pill">פְּתִיחָה מְנֻקֶּדֶת</div>
+            <h2>בָּרוּךְ הַבָּא לָאוֹר</h2>
+            <p>כָּל מִלָּה הִיא נִיצוֹץ אוֹר חַי, כָּל הוֹדָיָה פּוֹתַחַת שַׁעַר לְשִׂמְחָה וְלִגְאֻלָּה פְּרָטִית.</p>
+            <ul>
+                <li>"בְּס"ד — הַשּׁוּרָה הָרִאשׁוֹנָה לְהַכְנִיס רַכּוּת וְבִטָּחוֹן"</li>
+                <li>"הַמַּפְתֵּחַ — כֹּחַ הַתּוֹדָה פּוֹתֵחַ שַׁעֲרֵי יְשׁוּעָה"</li>
+                <li>"הַשְּׁאֵרִית — כָּל זְרִיעָה תּוֹצִיא פְּרִי בַּמִּצְרָךְ שֶׁלָּנוּ"</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <div class="pill">שַׁעַר הַקִּיּוּם</div>
+            <h2>תּוֹדָה עַל עֶצֶם הַקִּיּוּם</h2>
+            <p>"תּוֹדָה עַל הַנְּשִׁימָה הָרִאשׁוֹנָה שֶׁל הַיּוֹם" – הַמִּלָּה הַמְּנֻקֶּדֶת מְדַגֶּשֶׁת אֶת
+                הַפְּעִימָה הַפְּנִימִית וּפוֹתַחַת נְהָרוֹת שֶׁל הַכָּרָה בַּיֶּשׁ.</p>
+            <p>הַסִּימָנִים וְהַנְּקֻדּוֹת מוֹסִיפִים קֶצֶב כְּמוֹ בָּס בַּתִּזְמוֹרֶת — מְזַמְּרִים אֶת הַבְּרָכָה כָּל
+                יוֹם.</p>
+        </section>
+
+        <section class="card">
+            <div class="pill">שַׁעַר הַנְּשָׁמָה</div>
+            <h2>תּוֹדָה עַל הַנְּשָׁמָה</h2>
+            <p>"תּוֹדָה עַל הַנְּשָׁמָה שֶׁלֹּא עָזְבָה אוֹתִי" — הַנִּקּוּד הַמָּלֵא מַדְגִּישׁ אֶת הָרֶוַח הָרֻחָנִי
+                וּמְעֻצָּב בְּגְרָדִיֶּנְט אֲוִירָנִי שֶׁמַּרְמֵז עַל מַעֲלָה.</p>
+            <p>מְסַגְּרוֹת צֵל פְּנִימִי וְחִיצוֹנִי מְדַמּוֹת נְגִינַת מִיתָר בְּשַׁעַר רוּחָנִי.</p>
+        </section>
+
+        <section class="card">
+            <div class="pill">שַׁעַר הַדֶּרֶךְ</div>
+            <h2>תּוֹדָה עַל הַדֶּרֶךְ</h2>
+            <p>"כָּל פְּעִימָה הִיא זְכוּת חֲדָשָׁה" — הַדֶּרֶךְ מְקֻיֶּמֶת בְּצִבְעֵי עֲנָן וַאֲפִיקִים בְּנִקּוּד רַךְ
+                שֶׁמּוֹסִיף הֲדָהוֹד.</p>
+            <p>בַּקָּרְטָה זוֹ מֻצָּעִים קִישּׁוּרִים לִמְּסַלֵּי קְרִיאָה עֲצְמָאִיִּים שֶׁיָּכוֹלִים לְהִתְפַּתֵּחַ
+                לְשַׁעֲרֵי הוֹדָיָה נוֹסָפִים.</p>
+        </section>
+    </main>
+
+    <footer>
+        "זֶבַח תּוֹדָה יְכַבְּדָנְנִי וְשָׁם דֶּרֶךְ אַרְאֶנּוּ בִּישַׁע" — נֶשֶׁם וְלִינְקִים בַּדַּף הַלְּיָן.
+    </footer>
+</body>
+
+</html>

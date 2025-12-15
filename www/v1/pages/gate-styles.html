@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מפרט עיצובי — שערי תודה</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 28px 18px 48px;
+      font-family: 'Segoe UI', 'Assistant', Arial, sans-serif;
+      background: radial-gradient(circle at 25% 20%, #fff3e8 0%, #f7fbff 42%, #e8f1ff 100%);
+      color: #1d2233;
+      line-height: 1.9;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 28px;
+      border-radius: 22px;
+      box-shadow: 0 22px 46px rgba(20, 25, 55, 0.18);
+      border: 1px solid rgba(147, 159, 194, 0.24);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: clamp(26px, 3vw, 34px);
+      color: #2a2e46;
+      text-align: center;
+    }
+
+    .intro {
+      color: #475064;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .tile {
+      padding: 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(247, 249, 255, 0.96));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 16px 32px rgba(23, 28, 62, 0.14);
+      border: 1px solid rgba(147, 159, 194, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tile::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 82% 18%, rgba(44, 152, 240, 0.15), transparent 45%),
+                  radial-gradient(circle at 14% 86%, rgba(155, 89, 182, 0.12), transparent 38%);
+      z-index: 0;
+    }
+
+    .tile > * { position: relative; z-index: 1; }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .palette { margin: 10px 0; display: flex; gap: 6px; }
+    .swatch {
+      flex: 1;
+      height: 34px;
+      border-radius: 10px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 18px rgba(18,24,58,0.12);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .meta { color: #42516a; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>מפרט עיצובי לשערי ההודיה</h1>
+    <p class="intro">כל שער מתוכנן כמו כלי בתזמורת: צבע מוביל, גראדיאנט להתרוממות, והצללה כפולה שמדגישה את התנועה בין פנים לחוץ.</p>
+
+    <div class="grid">
+      <section class="tile">
+        <div class="badge" style="background: linear-gradient(135deg,#6dd5ed,#2193b0);">פתיחה — אור</div>
+        <p class="meta">אווירה: נשימה ראשונה של בוקר, ניצוץ רענן.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#e8f9ff"></div>
+          <div class="swatch" style="background:#b3e5fc"></div>
+          <div class="swatch" style="background:#2193b0"></div>
+        </div>
+        <p>שימוש בגראדיאנט שמיים ושכבת צל פנימי עדינה מעניק פתיחה מאווררת. טקסט מנוקד כדי להדגיש את המנגינה.</p>
+      </section>
+
+      <section class="tile">
+        <div class="badge" style="background: linear-gradient(135deg,#ff9a9e,#fad0c4);">שער הקיום</div>
+        <p class="meta">אווירה: לב פועם, הודיה על עצם היותנו.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#fff0f3"></div>
+          <div class="swatch" style="background:#ffd1dc"></div>
+          <div class="swatch" style="background:#ff7f90"></div>
+        </div>
+        <p>שילוב ורודים ואדומים רכים מייצר פעימה. צל חיצוני רך + צל פנימי קטן יוצרים תחושה של דופק.</p>
+      </section>
+
+      <section class="tile">
+        <div class="badge" style="background: linear-gradient(135deg,#f6d365,#fda085);">שער הנשמה</div>
+        <p class="meta">אווירה: ניגון חליל, רוך וחום פנימי.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#fff5e6"></div>
+          <div class="swatch" style="background:#fcd9a9"></div>
+          <div class="swatch" style="background:#f6a256"></div>
+        </div>
+        <p>צללים פנימיים בגווני דבש מוסיפים תחושת עומק. השימוש בניקוד מלא מדגיש את הנשימה בכל אות.</p>
+      </section>
+
+      <section class="tile">
+        <div class="badge" style="background: linear-gradient(135deg,#c3cfe2,#9fa4c4);">שער הדרך</div>
+        <p class="meta">אווירה: ערפל בוקר, אופק פתוח.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#eef2ff"></div>
+          <div class="swatch" style="background:#cfd8ff"></div>
+          <div class="swatch" style="background:#7c8db5"></div>
+        </div>
+        <p>גראדיאנט ערפילי וצללים ארוכים משווים תחושת מסע. שימוש בקווים דקיקים ותווי ניקוד רכים מייצר מקצב פסיעות.</p>
+      </section>
+
+      <section class="tile">
+        <div class="badge" style="background: linear-gradient(135deg,#84fab0,#8fd3f4);">שער האור</div>
+        <p class="meta">אווירה: מקהלת מיתרים, ברק טהור.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#e9fff6"></div>
+          <div class="swatch" style="background:#c1f3e0"></div>
+          <div class="swatch" style="background:#63d3b6"></div>
+        </div>
+        <p>פלטת מנטה וכחול בהיר מדגישה את זוהר האור. צללים פנימיים בהירים שומרים על שקיפות ועדינות.</p>
+      </section>
+
+      <section class="tile">
+        <div class="badge" style="background: linear-gradient(135deg,#a18cd1,#fbc2eb);">שער השמחה</div>
+        <p class="meta">אווירה: קצב מחיאות כפיים, קופצנות מבורכת.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#fbecff"></div>
+          <div class="swatch" style="background:#e6d6ff"></div>
+          <div class="swatch" style="background:#a76bff"></div>
+        </div>
+        <p>קונטרסט בין סגול לאפרסק מביא קפיצה שמחה. החזרי אור פנימיים וצללים חיצוניים קצרים נותנים תחושת קצב.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לינקייה — אמרתי תודה ונושעתי</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 28px 18px 48px;
+            font-family: 'Segoe UI', 'Assistant', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f3ff, #e9f5ff);
+            color: #1f2433;
+        }
+
+        .shell {
+            max-width: 980px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 28px;
+            border-radius: 20px;
+            box-shadow: 0 18px 36px rgba(40, 47, 87, 0.18);
+            border: 1px solid rgba(139, 148, 186, 0.2);
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            color: #2c2f48;
+        }
+
+        p.description {
+            text-align: center;
+            color: #4d5470;
+            margin-bottom: 18px;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 12px;
+        }
+
+        a.card {
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(44, 152, 240, 0.14), rgba(155, 89, 182, 0.12));
+            color: #1f2433;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 12px 24px rgba(20, 24, 56, 0.12);
+            border: 1px solid rgba(44, 152, 240, 0.2);
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+
+        a.card:hover {
+            transform: translateY(-2px);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 18px 32px rgba(20, 24, 56, 0.18);
+        }
+
+        .note {
+            margin-top: 16px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: #f3f7ff;
+            color: #33405c;
+            border: 1px solid rgba(139, 148, 186, 0.28);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+
+        strong {
+            color: #2c98f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <h1>לינקייה מרכזית</h1>
+        <p class="description">דף קישורים לכל העמודים והמסמכים החשובים שנבנו סביב הספרון, כולל גרסת ניקוד ומפרט עיצוב
+            לשערי ההודיה.</p>
+
+        <div class="links-grid">
+            <a class="card" href="index.html">
+                <strong>העמוד המקורי</strong><br>
+                ספרון הדפוס כפי שנוצר במקור, כולל כל ארבעים השערים.
+            </a>
+            <a class="card" href="index-nikud.html">
+                <strong>גירסה מנוקדת</strong><br>
+                גרסת נחיתה מעוצבת וניקוד קווי דגש לשערי הפתיחה.
+            </a>
+            <a class="card" href="pages/gate-styles.html">
+                <strong>מפרט עיצובי</strong><br>
+                צבעים, גראדיאנטים והצללות לכל שער הודיה, בסגנון תזמורתי.
+            </a>
+            <a class="card" href="docs/INDEX.md">
+                <strong>ריכוז מסמכי הפרויקט</strong><br>
+                אינדקס מהיר לכל התכנים והמסמכים הקיימים במאגרים.
+            </a>
+            <a class="card" href="src/pages">
+                <strong>התוכן הגולמי</strong><br>
+                קבצי מקור של ארבעים עמודי ההודיה (Markdown) להרחבות נוספות.
+            </a>
+            <a class="card" href="ROADMAP.md">
+                <strong>Roadmap</strong><br>
+                תכנון הדרך קדימה והצעות לספרון מורחב.
+            </a>
+        </div>
+
+        <div class="note">
+            אפשר להמשיך ולהרחיב את הלינקייה עם עמודים נוספים שייפתחו בהמשך, בהתאם למסמכים החדשים שייווצרו.
+        </div>
+    </div>
+</body>
+
+</html>
