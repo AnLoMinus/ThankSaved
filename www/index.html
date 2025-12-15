@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אמרתי תודה ונושעתי — דף בית</title>
+    <style>
+        :root {
+            --bg: linear-gradient(135deg, #f4ecff 0%, #e6f4ff 100%);
+            --card: #ffffff;
+            --text: #1f2433;
+            --accent: #8b5cf6;
+            --accent-2: #0ea5e9;
+            --shadow: 0 18px 32px rgba(31, 36, 51, 0.14);
+            --radius: 18px;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 28px 16px 48px;
+            font-family: 'Segoe UI', 'Assistant', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        header {
+            max-width: 1100px;
+            margin: 0 auto 28px;
+            padding: 26px;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 22px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(109, 119, 162, 0.16);
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(28px, 3.4vw, 40px);
+            color: #1a1f30;
+        }
+
+        .tagline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(142, 94, 246, 0.12), rgba(14, 165, 233, 0.12));
+            color: #3b4260;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        .intro {
+            margin: 12px 0 18px;
+            max-width: 760px;
+            color: #3c4563;
+        }
+
+        .dropdown {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        label {
+            font-weight: 700;
+            color: #2f3550;
+        }
+
+        select {
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(142, 94, 246, 0.35);
+            min-width: 240px;
+            font-weight: 700;
+            color: #2f3550;
+            background: linear-gradient(180deg, #ffffff, #f5f7ff);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 12px 22px rgba(0, 0, 0, 0.08);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(109, 119, 162, 0.12);
+        }
+
+        .card h2 {
+            margin: 10px 0 6px;
+            color: #1f2433;
+            font-size: 1.1rem;
+        }
+
+        .card p {
+            margin: 0;
+            color: #404b6a;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            background: linear-gradient(90deg, rgba(14, 165, 233, 0.12), rgba(142, 94, 246, 0.12));
+            border-radius: 999px;
+            color: #2563eb;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            color: #2563eb;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        footer {
+            max-width: 1100px;
+            margin: 22px auto 0;
+            text-align: center;
+            color: #3b4260;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="tagline">בס"ד · ארבע גרסאות דיגיטליות</div>
+        <h1>אמרתי תודה ונושעתי — ספרון דיגיטלי</h1>
+        <p class="intro">דף הבית המאוחד לכל הגרסאות שבספרון. בחרו את הגרסה המתאימה בעזרת התפריט הנשלף או דרך הקלפים המפורטים, ותוכלו להגיע מיד לקובץ הרלוונטי.</p>
+        <div class="dropdown">
+            <label for="version-picker">בחירת גירסה:</label>
+            <select id="version-picker">
+                <option value="" selected disabled>בחרו גירסה ותועברו אוטומטית</option>
+                <option value="v1/index.html">גירסה 1 — העמוד המקורי</option>
+                <option value="v2/index-nikud.html">גירסה 2 — גרסה מנוקדת</option>
+                <option value="v3/index-nikud.html">גירסה 3 — עיצוב המשך</option>
+                <option value="v4/index-nikud.html">גירסה 4 — עיצוב עדכני</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="pill">גירסה 1</div>
+            <h2>העמוד המקורי</h2>
+            <p>עימוד ראשוני של הספרון עם פסקאות מלאות והשראה בסיסית. כולל לינקייה ותצוגת שערים.</p>
+            <a href="v1/index.html">לפתיחת גירסה 1</a>
+        </section>
+        <section class="card">
+            <div class="pill">גירסה 2</div>
+            <h2>גרסה מנוקדת</h2>
+            <p>דף נחיתה מעוצב עם ניקוד מדויק וגרדיאנטים רכים. מתאים לקריאה מיידית.</p>
+            <a href="v2/index-nikud.html">לפתיחת גירסה 2</a>
+        </section>
+        <section class="card">
+            <div class="pill">גירסה 3</div>
+            <h2>שדרוג חווייתי</h2>
+            <p>העמקה בעיצוב השערים עם שפת צבע חדשה ותמיכה בדפי המשך.</p>
+            <a href="v3/index-nikud.html">לפתיחת גירסה 3</a>
+        </section>
+        <section class="card">
+            <div class="pill">גירסה 4</div>
+            <h2>גרסת הדגל</h2>
+            <p>העיצוב האחרון והמשויף ביותר, עם קבצי CSS נפרדים ותיאום צבעים מלא.</p>
+            <a href="v4/index-nikud.html">לפתיחת גירסה 4</a>
+        </section>
+    </main>
+
+    <footer>
+        בחרתם גירסה אחרת? ניתן תמיד לחזור לדף הבית באמצעות הקישור ../www/index.html.
+    </footer>
+
+    <script>
+        const picker = document.getElementById('version-picker');
+        picker.addEventListener('change', (event) => {
+            const target = event.target.value;
+            if (target) {
+                window.location.href = target;
+            }
+        });
+    </script>
+</body>
+</html>
